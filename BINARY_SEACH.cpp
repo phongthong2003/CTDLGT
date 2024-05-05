@@ -2,7 +2,7 @@
 using namespace std;
 
 int binary_search(vector<int> &A, int K) {
-    int left = 0, right = A.size() - 1;`
+    int left = 0, right = A.size() - 1;
     while(left <= right) {
         int mid = left + (right - left) / 2;
         if(A[mid] == K) {
