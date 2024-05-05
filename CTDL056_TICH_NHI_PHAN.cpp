@@ -2,8 +2,8 @@
 using namespace std;
 #define ll long long
 ll trans(ll binary_num){
-    ll decima_num = 0, i = 0, remainder;
-    while(binary_num!=0){
+    ll decima_num = 0, i = 0, remainder; //remainer: bien luu tru phan du khi chia cho 10
+    while(binary_num!=0){                //i : Bien su dung dem cac vi tri cua cac chu so trong so nhi phan
         remainder = binary_num%10;
         binary_num/=10;
         decima_num += remainder * pow(2,i);
